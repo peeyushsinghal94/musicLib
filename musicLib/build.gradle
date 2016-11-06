@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven' // ADD THIS
+apply plugin: 'com.github.dcendents.android-maven' // ADD THIS
 
-//group='com.github.jitpack'
+group='com.github.peeyushsinghal94'
 
 
 android {
@@ -43,7 +43,7 @@ android {
 
 }
 
-task deleteJar(type: Delete) {
+/*task deleteJar(type: Delete) {
     delete 'libs/musicLib.jar'
 }
 
@@ -52,12 +52,11 @@ task createJar(type: Copy) {
     from('build/intermediates/bundles/release/')
     into('libs/')
     include('classes.jar')
-    rename('classes.jar', 'musicLib.jar')
+    rename('classes.jar', 'musicLib-1.0.jar')
 
 }
-createJar.dependsOn(deleteJar, build)
+createJar.dependsOn(deleteJar, build)*/
 
-/*
 // build a jar with source files
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -81,4 +80,3 @@ artifacts {
     archives sourcesJar
     archives javadocJar
 }
-*/
